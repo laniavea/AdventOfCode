@@ -46,7 +46,7 @@ pub fn solve() {
         part_1_abs_diff += now_first.abs_diff(*now_sec) as u64
     }
 
-    println!("\tFirst part result: {part_1_abs_diff}");
+    println!("First part result: {part_1_abs_diff}");
 
     let mut sec_list_hash_map: HashMap<i32, u64> = HashMap::new();
 
@@ -69,7 +69,7 @@ pub fn solve() {
         part_2_abs_diff += (now_first as u64) * now_count;
     }
 
-    println!("\tSecond part result: {part_2_abs_diff}");
+    println!("Second part result: {part_2_abs_diff}");
 
 }
 
