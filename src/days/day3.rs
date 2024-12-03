@@ -1,5 +1,11 @@
 use std::fs;
 
+/// Main idea for part 1
+/// Fixing 'm' symbol if ')' encounters then trying to parse string if it's len acceptable
+///
+/// Main idea for part2
+/// As part1 but adding 'd' symbol check. If 'd' is "later" than 'm',
+/// than checking string started with 'd' otherwise - with 'm'
 pub fn solve() {
     let file_data = fs::read("./days_data/day_3_input_data.txt").expect("Impossible to read_file");
     let file_content: String = String::from_utf8(file_data).expect("Error in file");
